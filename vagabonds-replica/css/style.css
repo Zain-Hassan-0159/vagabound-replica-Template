@@ -7,7 +7,7 @@
 
 h2 .dull{
     display: block;
-    font-size: 50px;
+    font-size: 3.6vw;
     color: #e5e5e5;
     font-family: 'Abel';
     letter-spacing: 10px;
@@ -16,7 +16,7 @@ h2 .dull{
 
 h2 .dark{
     display: block;
-    font-size: 80px;
+    font-size: 5.7vw;
     color: #444343;
     font-family: 'Abel';
     letter-spacing: 10px;
@@ -27,6 +27,7 @@ h2 .dark{
 h2{
     margin-bottom: 50px;
     position: relative;
+    text-transform: uppercase;
 }
 
 h2:after{
@@ -439,13 +440,14 @@ section, header{
         height: 250px;
         flex: 1;
         min-width: 400px;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 760px){
     #about_us .container{
         display: inherit;
-        padding: 60px 15px;
+        padding: 0 15px;
     }
 
     #about_us .left-side{
@@ -463,8 +465,6 @@ section, header{
 #feature_posts .img{
     max-width: 320px;
     max-height: 220px;
-    height: 100%;
-    width: 100%;
     margin-bottom: 20px;
     position: relative;
 }
@@ -515,6 +515,10 @@ section, header{
     flex-wrap: wrap;
 }
 
+#feature_posts .row-item{
+    margin-bottom: 30px;
+}
+
 #feature_posts .info h4{
     font-size: 20px;
     font-weight: 400;
@@ -537,3 +541,68 @@ section, header{
 
 
 /* Feature Posts Section End */
+
+/* Category Choose Section Start */
+#category_choose{
+    background-image: url(../images/new-img-8-vag-copyright.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 90px;
+}
+
+#category_choose .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#category_choose .container .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#category_choose h2{
+    margin-bottom: 80px;
+}
+
+#category_choose h2 .dull{
+    color: rgba(255, 255, 255, 0.301);
+}
+
+#category_choose h2::after{
+    background-color: white;
+}
+
+#category_choose h2 .dark{
+    color: white;
+}
+
+#category_choose .row a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#category_choose .row a h4{
+    font-weight: normal;
+    font-size: 35px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#category_choose .row a .fa-th-large{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#category_choose .row a .fa-arrow-right{
+    margin-left: 10px;
+}
+
+#category_choose .row a span{
+    letter-spacing: 2px;
+}
+/* Category Choose Section End */
