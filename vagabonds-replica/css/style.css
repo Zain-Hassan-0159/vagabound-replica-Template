@@ -1,8 +1,45 @@
+:root{
+    --sections_padding: 0 90px;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+.img{
+    max-width: 320px;
+    max-height: 220px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.img .layout{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(240, 128, 128, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+ .img .layout i{
+    color: white;
+    font-size: 60px;
+    transform: scale(0);
+    transition: all 0.3s linear;
+}
+ .img:hover .layout{
+    opacity: 1;
+}
+ .img:hover i{
+    transform: scale(1);
 }
 
 h2 .dull{
@@ -415,7 +452,7 @@ section, header{
 #about_us .container{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 90px;
+    padding: var(--sections_padding);
 }
 
 #about_us .left-side img{
@@ -462,33 +499,7 @@ section, header{
 /*  About Us Section CSS END  */
 
 /* Feature Posts Section Start */
-#feature_posts .img{
-    max-width: 320px;
-    max-height: 220px;
-    margin-bottom: 20px;
-    position: relative;
-}
 
-#feature_posts .img .layout{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(240, 128, 128, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.3s linear;
-}
-
-#feature_posts .img .layout i{
-    color: white;
-    font-size: 60px;
-    transform: scale(0);
-    transition: all 0.3s linear;
-}
 
 #feature_posts .img:hover .layout{
     opacity: 1;
@@ -500,7 +511,7 @@ section, header{
 }
 
 #feature_posts{
-    padding: 0 90px;
+    padding: var(--sections_padding);
 }
 
 #feature_posts .img img{
@@ -517,6 +528,7 @@ section, header{
 
 #feature_posts .row-item{
     margin-bottom: 30px;
+    height: fit-content;
 }
 
 #feature_posts .info h4{
@@ -549,7 +561,7 @@ section, header{
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    padding: 0 90px;
+    padding: var(--sections_padding);
 }
 
 #category_choose .container{
@@ -605,4 +617,94 @@ section, header{
 #category_choose .row a span{
     letter-spacing: 2px;
 }
+#category_choose .contact-form{
+margin-top: 40px;
+}
+
+#category_choose .contact-form form{
+    width: 100%;
+
+    max-width: 500px;
+}
+
+#category_choose .contact-form input{
+    padding: 15px 20px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#category_choose .contact-form .submit-button:hover{
+    background-color: lightcoral;
+}
+
+
 /* Category Choose Section End */
+
+/* Intrest post section start */
+
+#intrest_post{
+    padding: var(--sections_padding);
+}
+
+#intrest_post .card{
+    height: fit-content;
+}
+
+#intrest_post .row{
+    text-align: center;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#intrest_post .img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intrest_post .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#intrest_post .row .info h4 {
+font-weight: 400;
+color: #565654;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+#intrest_post .info .response{
+display:block;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+#intrest_post .response  .comment{
+margin-right: 15px;
+}
+#intrest_post .info .response .views{
+margin-right: 15px;
+}
+
+@media screen and (max-width: 800px){
+    #intrest_post .row{
+        grid-gap: 25px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 630px){
+    #intrest_post .row{
+        grid-gap: 25px;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    :root{
+        --sections_padding: 0 20px;
+    }
+}
+
+/* Intrest post section End */
+
+
