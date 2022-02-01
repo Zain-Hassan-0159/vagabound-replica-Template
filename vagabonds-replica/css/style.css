@@ -708,3 +708,60 @@ margin-right: 15px;
 /* Intrest post section End */
 
 
+#single_post{
+    display: flex;
+    padding: 25px 80px;
+}
+
+#single_post main{
+    flex: 2;
+}
+
+#single_post main img{
+    width: 100%;
+}
+
+#single_post main .article-img{
+    margin-bottom: 20px;
+}
+
+#single_post main .post-info{
+    margin-bottom: 20px;
+}
+
+#single_post main .post-info .item{
+    margin-right: 20px;
+    color: #444343;
+    text-decoration: none;
+}
+
+#single_post main .post-info .likes:hover, #single_post main .post-info .comments:hover{
+    color: lightcoral;
+}
+
+#single_post aside{
+    flex: 1;
+}
+
+
+#single_post main .post-description p{
+    line-height: 1.4;
+    color: #454545;
+}
+
+#single_post main .post-description blockquote{
+    margin: 30px 0 30px 70px;
+    font-size: 28px;
+    position: relative;
+}
+
+#single_post main .post-description blockquote::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    position: absolute;
+    left: -70px;
+    top: 0;
+    font-size: 40px;
+    color: lightcoral;
+}
