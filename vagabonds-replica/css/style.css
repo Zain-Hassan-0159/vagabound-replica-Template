@@ -6,8 +6,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel';
 }
+
 .img{
     max-width: 320px;
     max-height: 220px;
@@ -735,18 +736,16 @@ margin-right: 15px;
     text-decoration: none;
 }
 
+
 #single_post main .post-info .likes:hover, #single_post main .post-info .comments:hover{
     color: lightcoral;
-}
-
-#single_post aside{
-    flex: 1;
 }
 
 
 #single_post main .post-description p{
     line-height: 1.4;
-    color: #454545;
+    color: #444343;
+    margin: 20px;
 }
 
 #single_post main .post-description blockquote{
@@ -764,4 +763,246 @@ margin-right: 15px;
     top: 0;
     font-size: 40px;
     color: lightcoral;
+}
+
+#single_post main .post-description iframe{
+    min-height: 100px;
+    max-width: 100%;  
+}
+#single_post main .post-description .post-meta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#single_post main .post-description .post-meta .post-tags{
+    display: flex;
+}
+#single_post main .post-description .post-meta .social-icons{
+    display: flex;
+}
+#single_post main .post-description .post-meta .social-icon{
+    padding: 12px;
+    border: 3px solid #444343;
+    background-color: white;
+    color: #444343;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.777rem;
+    font-weight: 800;
+    font-family: 'Abel';
+
+}
+#single_post main .post-description .post-meta .social-icon:hover{
+    color: lightcoral;
+    border-color: lightcoral;
+}
+#single_post main .author-info{
+    display: flex;
+    border: 3px solid lightcoral;
+    padding: 50px;
+}
+#single_post main .author-info .author-intro{
+    margin-left: 40px;
+}
+#single_post main .author-info .author-intro .author-name{
+    margin-bottom: 15px;
+    font-family: "Abel",sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+#single_post main .author-info .author-intro .about{ 
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: #7d7d7d;
+    margin-bottom: 10px;
+}
+
+#single_post main .author-info .author-intro a{
+    color: #444343;
+    text-decoration: none;
+}
+
+#single_post main .author-img {
+    min-width: 124px;
+}
+
+#single_post main .author-img img{
+    object-fit: cover;
+}
+
+#single_post main .more-info {
+    margin-top: 100px;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+#single_post main .more-info h6{
+    font-family: "Abel",sans-serif;
+    font-size: 1.33em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.16em;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: .01em;
+    margin-top: 1.73em;
+    margin-bottom: .74em;
+}
+
+#single_post main .more-info h6 .fa-arrow-right{
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+
+#single_post main .comment-form .heading{
+    font-family: "Abel",sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.22em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    margin-top: 1.29em;
+    margin-bottom: .46em;
+}
+
+#single_post main .comment-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+#single_post main .comment-form form .row-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#single_post main .comment-form form .row-1 input{
+    max-width: 350px;
+    width: 100%;
+    padding: 15px 30px;
+    border: 3px solid #757575;
+    font-weight: bold;
+    color: #757575;
+}
+
+#single_post main .comment-form form textarea{
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border: 3px solid #757575;
+    font-weight: bold;
+    color: #757575;
+}
+
+#single_post main .comment-form form .row-3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#single_post main .comment-form form .row-3 input{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border: 3px solid #757575;
+    font-weight: bold;
+    color: #757575;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+}
+
+#single_post main .comment-form form .btn{
+    width: fit-content;
+    padding: 15px 30px;
+    background: none;
+    border: 3px solid #757575;
+    font-weight: bold;
+    color: #757575;
+}
+
+
+#single_post aside{
+    flex: 1;
+    padding-left: 60px;
+}
+
+#single_post aside .category-widget{
+    margin-bottom: 80px;
+}
+
+#single_post aside .category-widget h3{
+    font-size: 25px;
+    color: #454545;
+    margin-bottom: 40px;
+}
+
+#single_post aside .category-widget ul{
+    list-style: none;
+}
+
+#single_post aside .category-widget ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#single_post aside .category-widget ul li a{
+    text-decoration: none;
+    color: #444343;
+}
+
+#single_post aside .category-widget ul li a:hover{
+    color: lightcoral;
+}
+
+#single_post aside .search-widget{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#single_post aside .search-widget input{
+    width: 100%;
+    padding: 15px 30px;
+    border: 3px solid #757575;
+    font-weight: bold;
+    color: #757575;
+}
+
+#single_post aside .search-widget .fa-search{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    color: #434343b0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#single_post aside .tags-widget h3{
+    font-size: 25px;
+    color: #454545;
+    margin-bottom: 40px;
+}
+
+#single_post aside .tags-widget .post-tags a{
+    color: rgb(68, 67, 67);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(68, 67, 67);
+    text-decoration: none;
+    border: solid;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 5px;
 }
